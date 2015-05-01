@@ -66,6 +66,7 @@ var reactNativeCameraDemo = React.createClass({
     else if(this.state.stage === 'preview'){
       // isStatic = this.state.image.type === 'file' ? false : true
       var uri = this.state.image.type === 'file' ? this.state.image.uri : 'data:image/jpeg;base64,'+this.state.image.uri
+      console.log('preview', uri)
       main = <Image
         ref="preview"
         style={{
